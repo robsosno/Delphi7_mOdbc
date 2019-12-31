@@ -1,0 +1,57 @@
+package MODBC_D7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'mODBC data-aware components'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  vcldb,
+  dcldb;
+
+contains
+  mDataBas in 'mDataBas.pas',
+  mQuery in 'mQuery.pas',
+  odbcsql in 'odbcsql.pas',
+  mODBCreg in 'mODBCreg.pas',
+  mParams in 'mParams.pas',
+  mpeditor in 'mpeditor.pas',
+  mconst in 'mconst.pas',
+  mSQLParm in 'mSQLParm.pas',
+  mSession in 'mSession.pas',
+  mDbaseEx in 'mDbaseEx.pas',
+  Mqueryex in 'Mqueryex.pas',
+  MQueryEd in 'Mqueryed.pas' {QueryEditDlg},
+  mDbaseEd in 'Mdbaseed.pas' {DataBaseEditorForm},
+  mDBWiz in 'mDBWiz.pas' {dbWizForm},
+  mTable in 'Mtable.pas',
+  mExcept in 'Mexcept.pas' {mODBCErrorDlg},
+  mParmFrm in 'mParmFrm.pas' {ParamsEditorForm},
+  mStoredProc in 'mStoredProc.pas',
+  odbchelper in 'odbchelper.pas',
+  mStoredProcEx in 'mStoredProcEx.pas',
+  msAccessSupportUnit in 'msAccessSupportUnit.pas';
+
+end.
